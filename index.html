@@ -1,51 +1,158 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CWCR Email Archive</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, Verdana, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+<title>Coalition for the West Credit River - Email Archive</title>
 
-        h1 {
-            margin-bottom: 30px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .display_archive {
-            font-family: Arial, Verdana, sans-serif;
-            font-size: 14px;
-        }
+body{
+    font-family: Arial, Helvetica, sans-serif;
 
-        .campaign {
-            line-height: 1.5;
-            margin: 8px 0;
-        }
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.15),
+            rgba(255,255,255,0.15)
+        ),
+        url('fish-background.jpg');
 
-        a {
-            text-decoration: none;
-        }
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    min-height:100vh;
+}
+
+.header{
+    text-align:center;
+    padding:30px 20px 10px;
+}
+
+.header img{
+    max-width:950px;
+    width:100%;
+    height:auto;
+}
+
+.archive-wrapper{
+    max-width:1000px;
+    margin:25px auto 60px auto;
+    padding:50px;
+
+    background:rgba(255,255,255,0.80);
+
+    backdrop-filter: blur(4px);
+
+    border-radius:24px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.20);
+}
+
+.archive-wrapper h1{
+    font-size:3rem;
+    color:#333;
+    margin-bottom:10px;
+}
+
+.archive-wrapper p{
+    font-size:1.8rem;
+    color:#444;
+    margin-bottom:30px;
+}
+
+.join-btn{
+    display:inline-block;
+
+    background:#0069d9;
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 34px;
+    border-radius:8px;
+
+    font-size:1.4rem;
+    margin-bottom:35px;
+
+    transition:.2s;
+}
+
+.join-btn:hover{
+    background:#0053ac;
+}
+
+.display_archive{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+
+.display_archive .campaign{
+    padding:14px 0;
+    border-bottom:1px solid rgba(0,0,0,.12);
+}
+
+.display_archive a{
+    color:#2c5d99;
+    text-decoration:none;
+}
+
+.display_archive a:hover{
+    text-decoration:underline;
+}
+
+@media (max-width:768px){
+
+    .archive-wrapper{
+        margin:15px;
+        padding:25px;
+    }
+
+    .archive-wrapper h1{
+        font-size:2rem;
+    }
+
+    .archive-wrapper p{
+        font-size:1.2rem;
+    }
+}
+</style>
+
 </head>
 <body>
 
-    <h1>Email Archive</h1>
+<div class="header">
+    <img src="cwcr-banner.png"
+         alt="Coalition for the West Credit River">
+</div>
 
-    <div id="archive">
-        <script
-            src="https://cwcr.us2.list-manage.com/generate-js/?u=14223852472733a1273cdb113&show=10&fid=46342"
-            type="text/javascript">
-        </script>
-    </div>
+<div class="archive-wrapper">
+
+    <h1>Email Campaign Archive</h1>
+
+    <p>from Coalition for the West Credit River</p>
+
+    <a class="join-btn"
+       href="http://eepurl.com/jpAk5E"
+       target="_blank">
+       Join our Mailing List
+    </a>
+
+    <script
+      src="https://cwcr.us2.list-manage.com/generate-js/?u=14223852472733a1273cdb113&show=10&fid=46342"
+      type="text/javascript">
+    </script>
+
+</div>
 
 </body>
 </html>
+```
