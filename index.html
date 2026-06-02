@@ -8,100 +8,111 @@
 <title>Coalition for the West Credit River - Email Archive</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
 
-    background-image:
+    background:
         linear-gradient(
             rgba(255,255,255,0.15),
             rgba(255,255,255,0.15)
         ),
-        url('fish-background.jpg');
+        url("fish-background.jpg");
 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
 
+.page{
+    width:100%;
     min-height:100vh;
+    padding:30px 20px 60px;
 }
 
-.header{
+.banner{
     text-align:center;
-    padding:30px 20px 10px;
+    margin-bottom:25px;
 }
 
-.header img{
-    max-width:950px;
+.banner img{
+    max-width:1000px;
     width:100%;
     height:auto;
 }
 
-.archive-wrapper{
-    max-width:1000px;
-    margin:25px auto 60px auto;
-    padding:50px;
+.archive-box{
+    max-width:1050px;
+    margin:0 auto;
 
     background:rgba(255,255,255,0.80);
 
-    backdrop-filter: blur(4px);
+    border-radius:20px;
 
-    border-radius:24px;
+    padding:40px;
 
     box-shadow:
-        0 10px 40px rgba(0,0,0,.20);
+        0 10px 35px rgba(0,0,0,.25);
+
+    backdrop-filter:blur(4px);
 }
 
-.archive-wrapper h1{
-    font-size:3rem;
+h1{
+    margin:0;
     color:#333;
-    margin-bottom:10px;
+    font-size:3rem;
 }
 
-.archive-wrapper p{
-    font-size:1.8rem;
+.subtitle{
     color:#444;
+    font-size:1.4rem;
+    margin-top:10px;
     margin-bottom:30px;
 }
 
-.join-btn{
+.join-button{
     display:inline-block;
 
-    background:#0069d9;
+    background:#0a67d1;
     color:white;
 
     text-decoration:none;
 
-    padding:18px 34px;
+    padding:18px 30px;
+
     border-radius:8px;
 
-    font-size:1.4rem;
-    margin-bottom:35px;
+    font-size:1.25rem;
+    font-weight:bold;
 
-    transition:.2s;
+    margin-bottom:30px;
 }
 
-.join-btn:hover{
-    background:#0053ac;
+.join-button:hover{
+    background:#0958b3;
 }
+
+.archive-section{
+    margin-top:20px;
+}
+
+/* Mailchimp archive styling */
 
 .display_archive{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-size:22px !important;
+    width:100%;
 }
 
-.display_archive .campaign{
-    padding:14px 0;
+.campaign{
+    padding:14px 0 !important;
     border-bottom:1px solid rgba(0,0,0,.12);
+    line-height:1.6 !important;
 }
 
 .display_archive a{
-    color:#2c5d99;
+    color:#2e5f99 !important;
     text-decoration:none;
 }
 
@@ -111,45 +122,72 @@ body{
 
 @media (max-width:768px){
 
-    .archive-wrapper{
-        margin:15px;
+    .archive-box{
         padding:25px;
     }
 
-    .archive-wrapper h1{
+    h1{
         font-size:2rem;
     }
 
-    .archive-wrapper p{
-        font-size:1.2rem;
+    .subtitle{
+        font-size:1.1rem;
+    }
+
+    .display_archive{
+        font-size:18px !important;
     }
 }
-</style>
 
+</style>
 </head>
+
 <body>
 
-<div class="header">
-    <img src="cwcr-banner.png"
-         alt="Coalition for the West Credit River">
-</div>
+<div class="page">
 
-<div class="archive-wrapper">
+    <div class="banner">
+        <img src="cwcr-banner.png"
+             alt="Coalition for the West Credit River">
+    </div>
 
-    <h1>Email Campaign Archive</h1>
+    <div class="archive-box">
 
-    <p>from Coalition for the West Credit River</p>
+        <h1>Email Campaign Archive</h1>
 
-    <a class="join-btn"
-       href="http://eepurl.com/jpAk5E"
-       target="_blank">
-       Join our Mailing List
-    </a>
+        <div class="subtitle">
+            from Coalition for the West Credit River
+        </div>
 
-    <script
-      src="https://cwcr.us2.list-manage.com/generate-js/?u=14223852472733a1273cdb113&show=10&fid=46342"
-      type="text/javascript">
-    </script>
+        <a class="join-button"
+           href="http://eepurl.com/jpAk5E"
+           target="_blank">
+           Join our Mailing List
+        </a>
+
+        <div class="archive-section">
+
+            <style type="text/css">
+                .display_archive {
+                    font-family: arial, verdana;
+                    font-size: 12px;
+                }
+
+                .campaign {
+                    line-height: 125%;
+                    margin: 5px;
+                }
+            </style>
+
+            <script
+              language="javascript"
+              src="https://cwcr.us2.list-manage.com/generate-js/?u=14223852472733a1273cdb113&show=10&fid=46342"
+              type="text/javascript">
+            </script>
+
+        </div>
+
+    </div>
 
 </div>
 
